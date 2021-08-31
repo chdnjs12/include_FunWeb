@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* 슬라이더 */
+#slider {
+    /* width: 100%; */
+    height: 363px;
+    text-align: center; 
+    background: url(../images/bgSlider.jpg) no-repeat center / cover;
+    position: relative;
+}
+
+#slider::before {
+    content: "";
+    /* display: block; */
+    width: 100%;
+    height: 363px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 요소가 겹쳐지는 건 position: absolute */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#slider p {
+    padding: 70px 0 30px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px #000;
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    /* 형제요소기 때문에 포지션을 넣어주지 않으면 포지션이 들어간 before 앞에 올 수 없다 */
+}
+
+#slider a {
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #ef464d;
+    margin: 40px auto 0;
+    position: relative;
+}
+
+/* 솔루션 */
+#solutionWrap { 
+    background: #ebebeb; 
+}
+#solution { 
+    overflow: hidden;
+    width: 930px; margin: 0 auto; padding: 83px 30px 50px; 
+}
+#solution .solution { 
+    width: 310px; 
+    float: left;
+    background: url(../images/bgSolution.png) no-repeat left; 
+}
+#solution .security { 
+    /* background: url(../images/bgSolution.png) no-repeat center;  */
+    background-position-x: 50%;
+    /* background-position-x: -310px; */
+}
+#solution .payment { 
+    /* background: url(../images/bgSolution.png) no-repeat right;  */
+    background-position-x: 100%;
+    /* background-position-x: -620px; */
+}
+#solution .solution a {
+    display: block;
+    padding: 0 34px 0 100px; color: #333;
+}
+#solution .solution a h3 { font-size: 16px; }
+#solution .solution a p { font-size: 14px; }
+
+/* board */
+#board {
+    overflow: hidden;
+    width: 1000px;
+    margin: 32px auto 0;
+}
+
+#board > section {
+    width: 420px;
+    /* height: 185px; */
+    float: left;
+}
+
+#board > section > h3 {
+    height: 21px;
+    text-indent: 25px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    background: url(../images/bgBoard.png);
+}
+
+/* security news */
+#sec_news {
+    margin: 0 80px 0 40px;
+}
+
+#sec_news h3 {
+    margin-bottom:18px;
+}
+
+#sec_news h3 span {
+    color: #f36422;
+}
+
+#sec_news a {
+    color: #333;
+}
+#sec_news a dl {
+    margin: 0 0 10px 5px;
+}
+#sec_news a dl dt {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #ff003f;
+}
+#sec_news a dl dd {
+    line-height: 16px;
+}
+
+/* news notice */
+#notice h3 {
+    margin-bottom: 22px; color: #827b00;
+}
+
+#notice ul li {
+    height: 26px; margin-right: 20px;
+    border-bottom: 1px dotted #999;
+    line-height: 26px; text-indent: 15px;
+    font-size: 14px;
+    background: url(../images/bulletNotice.gif) no-repeat 0 8px;
+}
+
+#notice ul li a {
+    float: left;
+    color: #333;
+}
+
+#notice ul li span {
+    float: right;
+}
